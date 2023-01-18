@@ -24,9 +24,9 @@ public class AppController {
         this.imageStorage = imageStorage;
     }
 
-    @GetMapping("/health")
+    @GetMapping("/version")
     public String health() {
-        return "OK";
+        return "0.1";
     }
 
     @PostMapping(value = "/collection/{collectionId}/upload", consumes = MULTIPART_FORM_DATA_VALUE)
